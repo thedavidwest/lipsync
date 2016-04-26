@@ -1,0 +1,17 @@
+.home_wrap
+  .flex_wrap
+    - if user_signed_in?
+      .log_in
+        .login_btn
+          = link_to "Pick Song", videos_path
+          = link_to "Vote", pages_vote_path
+    - else
+      .logo
+        = image_tag("mic.svg")
+      .splash_landing
+        %h1 // Lip Sync Battle //
+        %p Sign in to vote
+      .log_in
+        .login_btn
+          = link_to "Log In", new_user_session_path
+          = link_to "Sign Out", destroy_user_session_path, method: :delete

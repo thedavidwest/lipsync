@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  singer1: MyString
+  singer2: MyString
+
+two:
+  singer1: MyString
+  singer2: MyString

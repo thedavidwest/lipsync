@@ -1,0 +1,42 @@
+.home_wrap
+  .flex_wrap
+    - if user_signed_in?
+      - @battles.each do |battle|
+        .app_wrap
+          %h1.header // Current Battle //
+          - @users.each do |u|
+            .player_one
+              .player_image
+                = image_tag(u.avatar.url)
+              .player_name
+                %h1= battle.singer1
+            %h1.versus v
+            .player_two
+              .player_image
+                = image_tag(u.avatar.url)
+              .player_name
+                %h1= battle.singer2
+            .vote
+              =link_to like_battle_path(battle), method: :put do |u|
+                .vote_btn_one
+                  %p= battle.singer1
+                  %i.fa.fa-thumbs-o-up(aria-hidden='true')
+                  = battle.get_upvotes.size
+              =link_to like_battle_path(battle), method: :put do |u|
+                .vote_btn_two
+                  %p= battle.singer2
+                  %i.fa.fa-thumbs-o-up(aria-hidden='true')
+                  = battle.get_upvotes.size
+            .next_round
+              = link_to "Next Battle", root_path
+            = link_to "Sign Out", destroy_user_session_path, method: :delete
+    - else
+      .logo
+        = image_tag("mic.svg")
+      .splash_landing
+        %h1 // Lip Sync Battle //
+        %p Sign in to vote
+      .log_in
+        .login_btn
+          = link_to "Log In", new_user_session_path
+          = link_to "Sign Out", destroy_user_session_path, method: :delete

@@ -1,0 +1,86 @@
+.app_wrap
+  margin: 0 auto
+  padding: 25px 10px 10px 0px
+  max-width: 375px
+  height: 100vh
+  text-align: center
+  h1.header
+    font:
+      family: $round
+      size: 1.5em
+    text-transform: uppercase
+  .player_one, .player_two, .versus, .header
+    margin-bottom: 25px
+    .player_image
+      border-radius: 100%
+      border: 5px solid $white
+      +size(150px)
+      -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)
+      -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)
+      box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.5)
+      //background-color: $white
+      margin: 0 auto
+      img
+        +size(100%)
+        border-radius: 100%
+    .player_name
+      margin: 10px 0
+      h1
+        font:
+          family: $round
+          size: 1.5em
+        text-transform: uppercase
+
+  h1.versus
+    font:
+      family: $square
+      size: 1.2em
+    text-transform: uppercase
+    color: transparentize($white, .5)
+    width: 100%
+    margin: 20px auto
+    overflow: hidden
+    text-align: center
+    line-height: 1.2em
+    &:before
+      content: ""
+      vertical-align: top
+      display: inline-block
+      width: 100%
+      height: 0.65em
+      border-bottom: 1px solid transparentize($white, .5)
+      margin: 0 2% 0 -55%
+    &:after
+      content: ""
+      vertical-align: top
+      display: inline-block
+      width: 100%
+      height: 0.65em
+      border-bottom: 1px solid transparentize($white, .5)
+      margin: 0 2% 0 -55%
+      margin: 0 -55% 0 2%
+
+  .vote
+    display: flex
+    align-items: center
+    justify-content: space-between
+    text-transform: uppercase
+    .vote_btn_one, .vote_btn_two
+      margin-left: 10px
+      width: 170px
+      padding: 20px 10px
+      background-color: transparentize($white, .5)
+      border-radius: 10px
+      display: inline-flex
+      justify-content: space-between
+      align-items: center
+      transition: ease-in-out .3s
+      color: $white
+      &:hover, &:focus, &:active
+        background-color: transparentize($red, .1)
+      p
+        padding: 0
+        margin: 0
+        font-size: 1.1em
+      i
+        font-size: 2em

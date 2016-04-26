@@ -1,0 +1,10 @@
+.mobile_container_all
+  - @videos.reverse_each do |video|
+    .video_wrapper_all
+      .video_content
+        %img.ratio{:src => "http://placehold.it/16x9"}/
+        %iframe#player{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/#{video.url}?rel=0&amp;amp;showinfo=0;enablejsapi=1"}
+      .video_foot
+        .video_info.all_foot
+          = link_to video_path(video) do
+            %h1.all_foot= ((video.artist)+'-'+(video.title))

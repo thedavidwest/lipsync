@@ -1,0 +1,33 @@
+.home_wrap
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  .flex_wrap
+    .logo
+      margin: 0 auto
+      width: 50%
+    .splash_landing
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 50px
+      h1
+        margin: 25px 0
+        font:
+          family: $square
+          size: 1.8em
+        margin-bottom: 50px
+      p
+    .log_in
+      text-align: center
+      .login_btn
+        a
+          margin: 0 auto
+          padding: 20px 40px
+          border-radius: 10px
+          background-color: $red
+          text-align: center
+          color: $white
+          transition: ease-in-out .3s
+          &:hover
+            background-color: transparentize($red, .5)

@@ -1,0 +1,212 @@
+.mobile_container_all
+  width: 95%
+  margin: 25px auto 0 auto
+  flex-wrap: wrap
+.mobile_container, .mobile_container_all
+  display: flex
+  justify-content: center
+  align-items: center
+  min-height: 80vh
+  margin-bottom: 25px
+  .video_wrapper_all
+    width: 400px
+    @media only screen and (max-width: 1300px)
+      width: 45%
+  .video_wrapper
+    width: 75%
+  .video_wrapper, .video_wrapper_all
+    margin: 0 auto
+    height: 100%
+    @media only screen and (max-width: 1100px)
+      width: 100%
+    .video_content
+      position: relative
+      .ratio
+        display: block
+        width: 100%
+        height: auto
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+    .video_foot
+      .all_foot
+        //background: white !important
+        color: $red !important
+        font-size: 1em !important
+        text-decoration: underline !important
+        padding: 10px 10px !important
+        text-align: center
+        &:hover
+          color: transparentize($red, .5) !important
+      .video_info
+        padding: 10px
+        background: $black
+        margin-bottom: 20px
+        h1
+          font:
+            weight: 400
+            size: 1.5em
+            family: $round
+          text-transform: capitalize
+          margin-bottom: 0
+          color: $white
+          display: inline
+          a
+            color: $red
+            &:hover
+              color: transparentize($red, .5)
+          @media only screen and (max-width: 800px)
+            font-size: 1em
+          @media only screen and (max-width: 600px)
+            font-size: .8em
+      .buttons
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media only screen and (max-width: 1100px)
+          width: 95%
+          justify-content: center
+          display: block
+        .random_button
+          text-align: center
+          margin-bottom: 15px
+          @media only screen and (max-width: 1100px)
+            margin-bottom: 30px
+          a
+            width: 100%
+            padding: 10px 60px
+            background-color: $red
+            color: $white
+            border-radius: 8px
+            transition: all .4s ease-in-out
+            font:
+              size: .8em
+              family: $round
+              weight: 400
+            &:hover
+              background-color: transparentize($red, .2)
+        .showall_button
+          text-align: center
+          a
+            width: 100%
+            color: $red
+            transition: all .4s ease-in-out
+            text-decoration: underline
+            font:
+              size: .8em
+              family: $round
+              weight: 400
+            &:hover
+              color: transparentize($red, .2)
+        .add_button
+          text-align: center
+          @media only screen and (max-width: 1100px)
+            margin-bottom: 20px
+          a
+            width: 100%
+            color: $red
+            transition: all .4s ease-in-out
+            padding: 10px 60px
+            border: 1px solid
+            border-radius: 8px
+            font:
+              size: .8em
+              family: $round
+              weight: 400
+            &:hover
+              color: transparentize($red, .2)
+    .user_links
+      background-color: white
+      border-radius: 5px
+      padding: 20px
+      text-align: center
+      margin: 0 auto
+      width: 200px
+      a
+        color: $red
+        transition: all .4s ease-in-out
+        &:last-child
+          border-right: none
+        font:
+          size: .8em
+          family: $round
+          weight: 400
+        &:hover
+          color: transparentize($red, .2)
+      @media only screen and (max-width: 1100px)
+        margin: 0 auto
+        text-align: center
+  .new_form
+    width: 80%
+.back_button
+  text-align: left
+  a
+    width: 100%
+    color: $red
+    transition: all .4s ease-in-out
+    text-decoration: underline
+    padding-left: 2.5%
+    font:
+      size: .8em
+      family: $round
+      weight: 400
+    &:hover
+      color: transparentize($red, .2)
+.new_form
+  font-family: $square
+  color: $red
+  h1
+    font-family: $square
+  .field
+    h5
+      font:
+        style: italic
+        size: .7em
+      color: $red
+      span
+        color: $grey
+      span.bold
+        color: $black
+  .form_buttons
+    display: flex
+    justify-content: space-between
+    @media only screen and (max-width: 800px)
+      display: block
+    .actions
+      input[type="submit"]
+        text-align: center !important
+        margin-bottom: 15px !important
+        padding: 10px 60px !important
+        background-color: $red !important
+        color: $white !important
+        border-radius: 8px !important
+        transition: all .4s ease-in-out !important
+        font:
+          size: .8em !important
+          family: $round !important
+          //weight: 400 !important
+        &:hover
+          background-color: transparentize($red, .2) !important
+    .random_button
+      text-align: center
+      margin-bottom: 25px !important
+      @media only screen and (max-width: 800px)
+        text-align: left !important
+      a
+        //width: 100% !important
+        padding: 10px 60px !important
+        background-color: $red !important
+        color: $white !important
+        border-radius: 8px !important
+        transition: all .4s ease-in-out !important
+        font:
+          size: .8em !important
+          family: $round !important
+          weight: 400 !important
+        @media only screen and (max-width: 800px)
+          margin-bottom: 50px !important
+        &:hover
+          background-color: transparentize($red, .2) !important
