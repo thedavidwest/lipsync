@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :battles do
     member do
       put "like", to: "battles#upvote"
+      put "dislike", to: "battles#downvote"
     end
   end
   resources :users do

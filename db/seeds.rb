@@ -1,13 +1,13 @@
 # Lip Sync Battle Seeds
 
 # Create Users
-User.create(name: 'david', email: 'sam@sam.com', password: 'david')
-User.create(name: 'erin', email: 'erin@erin.com', password: 'erin')
-User.create(name: 'shannon', email: 'shannon@shannon.com', password: 'shannon')
-User.create(name: 'mike', email: 'mike@mike.com', password: 'mike')
-User.create(name: 'nathan', email: 'nathan@nathan.com', password: 'nathan')
-User.create(name: 'jenni', email: 'jenni@jenni.com', password: 'jenni')
-User.create(name: 'sam', email: 'sam@sam.com', password: 'sam')
+User.create(name: 'David', email: 'sam@sam.com', password: 'david')
+User.create(name: 'Erin', email: 'erin@erin.com', password: 'erin')
+User.create(name: 'Shannon', email: 'shannon@shannon.com', password: 'shannon')
+User.create(name: 'Mike', email: 'mike@mike.com', password: 'mike')
+User.create(name: 'Nathan', email: 'nathan@nathan.com', password: 'nathan')
+User.create(name: 'Jenni', email: 'jenni@jenni.com', password: 'jenni')
+User.create(name: 'Sam', email: 'sam@sam.com', password: 'sam')
 
 # Create Videos
 Video.create(url: '9_iKKL21rZo?start=1m&end=2m', artist: 'Garth Brooks', title: 'The Thunder Rolls')

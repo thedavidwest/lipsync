@@ -22,13 +22,13 @@
                   %p= battle.singer1
                   %i.fa.fa-thumbs-o-up(aria-hidden='true')
                   = battle.get_upvotes.size
-              =link_to like_battle_path(battle), method: :put do |u|
+              =link_to dislike_battle_path(battle), method: :put do |u|
                 .vote_btn_two
                   %p= battle.singer2
                   %i.fa.fa-thumbs-o-up(aria-hidden='true')
-                  = battle.get_upvotes.size
+                  = battle.get_downvotes.size
             .next_round
-              = link_to "Next Battle", root_path
+              = link_to "Next Battle", pages_vote_path
               = link_to "Sign Out", destroy_user_session_path, method: :delete
     - else
       .logo

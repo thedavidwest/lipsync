@@ -1,5 +1,5 @@
 class BattlesController < ApplicationController
-  before_action :set_battle, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :set_battle, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
 
   # GET /battles
   # GET /battles.json
@@ -65,6 +65,10 @@ class BattlesController < ApplicationController
 
   def upvote
     @battle.upvote_by current_user
+    redirect_to :back
+  end
+  def downvote
+    @battle.downvote_by current_user
     redirect_to :back
   end
 
