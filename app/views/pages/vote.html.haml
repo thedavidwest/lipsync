@@ -28,7 +28,7 @@
                   %i.fa.fa-thumbs-o-up(aria-hidden='true')
                   = battle.get_downvotes.size
             .next_round
-              = link_to "Next Battle", pages_vote_path
+              = link_to "Next Battle", pages_vote_path, class: :btns
               = link_to "Sign Out", destroy_user_session_path, method: :delete
     - else
       .logo

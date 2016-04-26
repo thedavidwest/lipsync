@@ -20,7 +20,7 @@
         <td><%= battle.get_upvotes.size %></td>
         <td><%= battle.singer2 %></td>
         <td><%= battle.get_downvotes.size %></td>
-        <td><%= link_to 'Delete', battle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', battle, method: :delete, data: { confirm: 'Are you sure?' }, class: :btns %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,6 +28,6 @@
 
 <br>
 
-<%= link_to 'New Battle', new_battle_path %>
-<%= link_to 'Home', root_path %>
+<%= link_to 'New Battle', new_battle_path, class: :btns %>
+<%= link_to 'Home', root_path, class: :btns %>
 </div>
