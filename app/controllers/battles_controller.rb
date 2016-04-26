@@ -80,6 +80,6 @@ class BattlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def battle_params
-      params.require(:battle).permit(:singer1, :singer2, :name)
+      params.require(:battle).permit(:singer1, :singer2, :name, :avatar, :photo)
     end
 end

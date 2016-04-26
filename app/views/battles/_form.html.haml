@@ -11,7 +11,13 @@
     = f.label "Singer Numba Won"
     = f.input :singer1, collection: User.all, value_method: :name
   .field
+    = f.label "S1 Photo"
+    = f.file_field :avatar
+  .field
     = f.label "Singer Numba Two"
     = f.input :singer2, collection: User.all, value_method: :name
+  .field
+    = f.label "S2 Photo"
+    = f.file_field :photo
   .actions
     = f.submit

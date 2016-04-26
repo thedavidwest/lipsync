@@ -7,13 +7,13 @@
           - @users.each do |u|
             .player_one
               .player_image
-                = image_tag(u.avatar.url)
+                = image_tag (battle.avatar)
               .player_name
                 %h1= battle.singer1
             %h1.versus v
             .player_two
               .player_image
-                = image_tag(u.avatar.url)
+                = image_tag (battle.photo)
               .player_name
                 %h1= battle.singer2
             .vote

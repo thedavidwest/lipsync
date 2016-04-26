@@ -2,17 +2,18 @@
   .flex_wrap
     - if user_signed_in?
       .log_in
+        .main
+          %h1 // LSB // Main Menu
         .login_btn
           = link_to "Pick Song", videos_path
           = link_to "Vote", pages_vote_path
           = link_to "Battles", battles_path
     - else
       .logo
-        = image_tag("mic.svg")
+        = image_tag("mic0.svg")
       .splash_landing
         %h1 // Lip Sync Battle //
         %p Sign in to vote
       .log_in
         .login_btn
-          = link_to "Log In", new_user_session_path
-          = link_to "Sign Out", destroy_user_session_path, method: :delete
+          = link_to "Sign In", new_user_session_path

@@ -1,4 +1,4 @@
-a.btns
+.btns
   background-color: $white
   padding: 10px 15px
   color: $red
@@ -26,6 +26,9 @@ a.btns
       p
     .log_in
       text-align: center
+      .main
+        h1
+          margin-bottom: 100px
       .login_btn
         a
           margin: 0 auto
@@ -36,6 +39,6 @@ a.btns
           color: $white
           transition: ease-in-out .3s
           @media only screen and (max-width: 400px)
-          padding: 10px 15px
+            padding: 10px 15px
           &:hover
             background-color: transparentize($red, .5)
