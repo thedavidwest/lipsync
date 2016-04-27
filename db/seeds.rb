@@ -1,6 +1,6 @@
 # Lip Sync Battle Seeds
 # Create Users
-User.create(name: 'David', email: 'sam@sam.com', password: 'david')
+User.create(name: 'David', email: 'david@david.com', password: 'david')
 User.create(name: 'Erin', email: 'erin@erin.com', password: 'erin')
 User.create(name: 'Shannon', email: 'shannon@shannon.com', password: 'shannon')
 User.create(name: 'Mike', email: 'mike@mike.com', password: 'mike')
