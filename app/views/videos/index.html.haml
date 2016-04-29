@@ -1,3 +1,7 @@
+- @videos.reverse_each do |video|
+  .seinfo
+    %h1= ((video.artist)+' - '+(video.title))
+    %h1= video.url
 .return_link
   = link_to root_path do
     %i.fa.fa-arrow-left(aria-hidden ='true')
